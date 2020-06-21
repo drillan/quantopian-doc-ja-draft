@@ -19,3 +19,4 @@ mv requirements.txt ../.
 mv source ../.
 cd ..
 rm -rf quantopian-doc-ja
+cp replace/index.rst source/index.rst

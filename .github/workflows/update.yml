@@ -1,0 +1,10 @@
+name:  Merge Draft
+on:
+    push:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run update script
+            - run: update.sh
