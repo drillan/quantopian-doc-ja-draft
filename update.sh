@@ -1,5 +1,5 @@
-rm Makefile  README.md  WEB+DB_PRESS.yml    make.bat   quantopian-doc.yml  requirements.txt 
-rm -rf notebooks source build
+rm Makefile make.bat requirements.txt 
+rm -rf source build
 git clone https://github.com/tokyoquantopian/quantopian-doc-ja.git
 cd quantopian-doc-ja
 git fetch origin issue_8
@@ -12,7 +12,10 @@ git checkout master
 git checkout issue_8 source/tutorial
 git checkout issue_14 source/tutorial
 git checkout tutorial3_alphalens_lesson1_to_5 source/tutorial
-mv * ../.
 mv .gitignore ../.
+mv Makefile ../.
+mv make.bat ../.
+mv requirements.txt ../.
+mv source ../.
 cd ..
 rm -rf quantopian-doc-ja
