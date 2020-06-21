@@ -7,4 +7,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: run update script
+              uses: actions/checkout@v1
               run: sudo bash update.sh
